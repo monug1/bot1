@@ -11,7 +11,7 @@ bot.on('ready', () => {
     console.log(`ЭТОТ ТУПОЙ БОТ ${bot.user.tag} ЗАПУЩЕН НАКОНЕЦ-ТО!`);
 });
 
-bot.login('OTA5OTcxMjUwOTgwNDU4NTQ2.YZMCxA.Tj8S0vbyB0tTe-f_2wTAyJ2_U3g');
+bot.login(process.env.TOKEN);
 
 bot.on('guildMemberAdd', (member) => {
     console.log(member)
